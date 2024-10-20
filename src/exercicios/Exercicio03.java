@@ -15,5 +15,7 @@ public class Exercicio03 {
         double salario = valorHora * horaTrabalhada;
 
         System.out.printf("Seu salário será de: R$%.2f", salario);
+
+        sc.close();
     }
 }
