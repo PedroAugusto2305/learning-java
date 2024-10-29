@@ -10,8 +10,8 @@ public class CarroTeste {
         popular.acelerar();
         esportivo.acelerar();
         esportivo.acelerar();
-        System.out.printf("Velocidade atual carro popular: %.1f km/h\n", popular.velocidade);
-        System.out.printf("Velocidade atual carro esportivo: %.1f km/h\n", esportivo.velocidade);
+        System.out.printf("Velocidade atual carro popular: %.1f km/h\n", popular.velocidadeAtual);
+        System.out.printf("Velocidade atual carro esportivo: %.1f km/h\n", esportivo.velocidadeAtual);
         System.out.println();
 
         popular.frear();
@@ -26,7 +26,7 @@ public class CarroTeste {
         esportivo.frear();
         esportivo.frear();
 
-        System.out.printf("Velocidade atual carro popular: %.1f km/h\n", popular.velocidade);
-        System.out.printf("Velocidade atual carro esportivo: %.1f km/h\n", esportivo.velocidade);
+        System.out.printf("Velocidade atual carro popular: %.1f km/h\n", popular.velocidadeAtual);
+        System.out.printf("Velocidade atual carro esportivo: %.1f km/h\n", esportivo.velocidadeAtual);
     }
 }
