@@ -1,10 +1,14 @@
-package oo.heranca.desafio;
+package oo.heranca.teste;
+
+import oo.heranca.desafio.Carro;
+import oo.heranca.desafio.Civic;
+import oo.heranca.desafio.Ferrari;
 
 public class CarroTeste {
     public static void main(String[] args) {
 
         Carro popular = new Civic();
-        Carro esportivo = new Ferrari();
+        Ferrari esportivo = new Ferrari(350);
 
         popular.acelerar();
         popular.acelerar();
@@ -18,13 +22,9 @@ public class CarroTeste {
         popular.frear();
         popular.frear();
 
-        esportivo.frear();
-        esportivo.frear();
-        esportivo.frear();
-        esportivo.frear();
-        esportivo.frear();
-        esportivo.frear();
-        esportivo.frear();
+
+        esportivo.ligarTurbo();
+        esportivo.ligarAr();
 
         System.out.printf("Velocidade atual carro popular: %.1f km/h\n", popular.velocidadeAtual);
         System.out.printf("Velocidade atual carro esportivo: %.1f km/h\n", esportivo.velocidadeAtual);

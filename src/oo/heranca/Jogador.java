@@ -1,16 +1,16 @@
 package oo.heranca;
 
 public class Jogador {
-    int vida = 100;
-    int x;
-    int y;
+    public int vida = 100;
+    public int x;
+    public int y;
 
     Jogador(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    void atacar(Jogador oponente) {
+    public void atacar(Jogador oponente) {
         int deltaX = Math.abs(x - oponente.x);
         int deltaY = Math.abs(y - oponente.y);
 
@@ -21,7 +21,7 @@ public class Jogador {
         }
     }
 
-    void andar(Direcao direcao) {
+    public void andar(Direcao direcao) {
         switch (direcao) {
             case NORTE -> y--;
             case LESTE -> x++;
